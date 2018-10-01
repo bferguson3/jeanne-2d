@@ -1,4 +1,4 @@
---Untitled tactics RPG
+--<Game Title>
 --LOVE 2D + Aseprite
 
 --(c)2018 Ben Ferguson, all rights reserved
@@ -73,7 +73,7 @@ function love.draw(dt)
     
     lg.draw(bgcanvas,0,0)
     lg.draw(mapuicanvas,0,0)
-    --lg.print("Hello World",100,100,0,pixelScale,pixelScale)
+    lg.print("Hello World",100,100,0,pixelScale,pixelScale)
     
     lg.draw(joan.animation.spriteSheet, joan.animation.quads[joan.direction], joan.x, joan.y, 0, pixelScale, pixelScale)
 end

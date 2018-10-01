@@ -4,17 +4,24 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build and run Love2D game",
+            "label": "Build+Run (Home Desktop)",
             "type": "process",
             "command": "C:\\Program Files\\LOVE\\love.exe",
             "problemMatcher": [],
             "args": [
                 "--console",
                 ".\\"
-            ],
-            "group": {
+            ]
+            
+        },
+        {
+            "label": "Build+Run (Macbook)",
+            "type": "shell",
+            "command": "/Applications/love.app/Contents/MacOS/love --console ~/Projects/jeanne-2d/",
+            "problemMatcher": []
+            ,"group":{
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             }
         }
     ]
